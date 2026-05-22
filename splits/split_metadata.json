@@ -1,0 +1,10 @@
+{
+  "seed": 2026,
+  "dataset": "CIFAR-10",
+  "val_count": 5000,
+  "train_labeled_10percent_count": 5000,
+  "train_ssl_unlabeled_count": 45000,
+  "test_count": 10000,
+  "val_per_class": 500,
+  "labeled_per_class": 500
+}
