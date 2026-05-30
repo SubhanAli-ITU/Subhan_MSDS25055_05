@@ -1,13 +1,4 @@
-"""
-Task 1 — Supervised Baseline with Limited Labels
-================================================
-Trains a ResNet-18 from scratch on the fixed 10 % labeled CIFAR-10 split.
 
-Expected outputs
-----------------
-graphs/supervised_loss.png
-results/supervised_confusion_matrix.png
-"""
 
 import os
 import json

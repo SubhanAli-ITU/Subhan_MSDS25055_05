@@ -1,15 +1,4 @@
-"""
-Task 2 — Understanding Augmentations
-=====================================
-Implements the SimCLR augmentation pipeline, the TwoViewTransform wrapper,
-and generates a visualisation showing:
-    Original Image | Augmented View 1 | Augmented View 2
-for at least 10 images.
 
-Expected output
----------------
-results/augmentation_examples.png
-"""
 
 import os
 import sys
