@@ -1,20 +1,3 @@
-"""
-=============================================================
-Assignment 5 — Checkpoint 2 | Task 4
-SimCLR Model Components
-=============================================================
-Implements (all from scratch — no SimCLR library used):
-  • Encoder          — ResNet-18 modified for CIFAR-10
-  • ProjectionHead   — 512 → 256 → 128
-  • SimCLR           — Encoder + ProjectionHead
-  • cosine_similarity_matrix  — (2N × 2N)
-  • NTXentLoss       — NT-Xent from scratch
-  • visualise_similarity_heatmap
-
-Outputs
--------
-  results/similarity_matrix_before_training.png
-"""
 
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

@@ -1,14 +1,3 @@
-"""
-=============================================================
-Assignment 5 — Checkpoint 1 | Task 1
-Supervised Baseline — ResNet-18 on 10% labeled CIFAR-10
-=============================================================
-Outputs
--------
-  graphs/supervised_loss.png
-  results/supervised_confusion_matrix.png
-  models/supervised_model.pt
-"""
 
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

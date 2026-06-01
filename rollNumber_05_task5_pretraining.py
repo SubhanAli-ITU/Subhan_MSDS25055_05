@@ -1,19 +1,3 @@
-"""
-=============================================================
-Assignment 5 — Checkpoint 3 | Task 5
-SimCLR Pre-training on Unlabelled CIFAR-10
-=============================================================
-• Trains SimCLR for 50 epochs using train_ssl_unlabeled.txt
-• Labels are NOT used during pre-training
-• Saves loss curve, before/after similarity matrices & table
-
-Outputs
--------
-  graphs/simclr_pretraining_loss.png
-  results/similarity_matrix_before_training.png  (overwritten if already exists)
-  results/similarity_matrix_after_training.png
-  models/simclr_encoder.pt
-"""
 
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

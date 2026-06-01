@@ -1,12 +1,4 @@
-"""
-=============================================================
-Assignment 5 — Checkpoint 1 | Task 2
-Augmentation Pipeline + TwoViewTransform + Visualisation
-=============================================================
-Outputs
--------
-  results/augmentation_examples.png
-"""
+
 
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))

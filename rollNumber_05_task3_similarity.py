@@ -1,13 +1,3 @@
-"""
-=============================================================
-Assignment 5 — Checkpoint 2 | Task 3
-Feature Similarity BEFORE SimCLR Training
-=============================================================
-Pass images through a *random* untrained encoder and measure
-cosine similarity between same-image and different-image pairs.
-
-Outputs  (printed table — no image required for this task)
-"""
 
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
