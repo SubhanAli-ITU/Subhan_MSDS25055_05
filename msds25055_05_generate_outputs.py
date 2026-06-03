@@ -1,16 +1,4 @@
-"""
-=============================================================
-Assignment 5 — Checkpoint 4
-Generate metrics.json and test_predictions.csv
-=============================================================
-Runs all evaluation steps and writes the two required output
-files in the formats specified by the assignment.
 
-Outputs
--------
-  results/metrics.json
-  results/test_predictions.csv
-"""
 
 import os, sys, json, csv
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -23,8 +11,8 @@ from torch.utils.data import DataLoader
 
 from utils.seed import set_seed
 from utils.dataset_splits import get_cifar10_subset
-from rollNumber_05_task4_simclr import Encoder
-from rollNumber_05_task7_finetune import FineTuneModel
+from msds25055_05_task4_simclr import Encoder
+from msds25055_05_task7_finetune import FineTuneModel
 
 SEED        = 2026
 BATCH_SIZE  = 64
@@ -81,7 +69,7 @@ def main():
     test_loader = get_test_loader()
 
     # ── 1. Supervised baseline accuracy ───────────────────────────────────────
-    from rollNumber_05_task1_supervised import build_resnet18
+    from msds25055_05_task1_supervised import build_resnet18
     sup_model = build_resnet18(10).to(device)
     sup_acc = 0.0
     if try_load(sup_model, f"{MODELS_DIR}/supervised_model.pt", device):
@@ -89,7 +77,7 @@ def main():
     print(f"[1] Supervised 10% test acc   : {sup_acc:.4f}")
 
     # ── 2. Random encoder + linear probe ─────────────────────────────────────
-    from rollNumber_05_task6_linear_probe import extract_features
+    from msds25055_05_task6_linear_probe import extract_features
     import torchvision.transforms as T
     from utils.dataset_splits import get_cifar10_subset
 

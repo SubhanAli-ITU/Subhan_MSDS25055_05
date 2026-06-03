@@ -1,16 +1,4 @@
-"""
-=============================================================
-Assignment 5 — Checkpoint 4 | Task 6
-Linear Probe Evaluation
-=============================================================
-Experiment A : Random  frozen encoder + linear head
-Experiment B : SimCLR  frozen encoder + linear head
 
-Outputs
--------
-  graphs/linear_probe_accuracy.png
-  models/linear_probe.pt
-"""
 
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -23,7 +11,7 @@ import matplotlib.pyplot as plt
 
 from utils.seed import set_seed
 from utils.dataset_splits import get_cifar10_subset
-from rollNumber_05_task4_simclr import Encoder
+from msds25055_05_task4_simclr import Encoder
 
 SEED       = 2026
 BATCH_SIZE = 64

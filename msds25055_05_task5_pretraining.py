@@ -9,8 +9,8 @@ import matplotlib.pyplot as plt
 
 from utils.seed import set_seed
 from utils.dataset_splits import get_cifar10_subset, TwoViewDataset
-from rollNumber_05_task2_augmentations import TwoViewTransform, simclr_transform
-from rollNumber_05_task4_simclr import (
+from msds25055_05_task2_augmentations import TwoViewTransform, simclr_transform
+from msds25055_05_task4_simclr import (
     SimCLR, NTXentLoss, cosine_similarity_matrix, visualise_similarity_heatmap
 )
 

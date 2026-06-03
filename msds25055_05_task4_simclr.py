@@ -14,7 +14,7 @@ import numpy as np
 from utils.seed import set_seed
 from utils.dataset_splits import get_cifar10_subset, TwoViewDataset
 from torch.utils.data import DataLoader
-from rollNumber_05_task2_augmentations import TwoViewTransform, simclr_transform
+from msds25055_05_task2_augmentations import TwoViewTransform, simclr_transform
 
 SEED        = 2026
 BATCH_SIZE  = 64

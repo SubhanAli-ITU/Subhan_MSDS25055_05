@@ -1,21 +1,4 @@
-"""
-=============================================================
-Assignment 5 — Checkpoint 4 | Task 8
-PCA / t-SNE Feature Visualisation
-=============================================================
-Extracts 512-dim features from 1000 validation images using:
-  1. Random (untrained) encoder
-  2. SimCLR pre-trained encoder
-  3. Fine-tuned encoder
 
-Reduces to 2D with t-SNE (or PCA) and saves scatter plots.
-
-Outputs
--------
-  results/random_encoder_pca_or_tsne.png
-  results/simclr_encoder_pca_or_tsne.png
-  results/finetuned_encoder_pca_or_tsne.png
-"""
 
 import os, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -31,8 +14,8 @@ from sklearn.decomposition import PCA
 
 from utils.seed import set_seed
 from utils.dataset_splits import get_cifar10_subset
-from rollNumber_05_task4_simclr import Encoder
-from rollNumber_05_task7_finetune import FineTuneModel
+from msds25055_05_task4_simclr import Encoder
+from msds25055_05_task7_finetune import FineTuneModel
 
 SEED        = 2026
 N_SAMPLES   = 1000

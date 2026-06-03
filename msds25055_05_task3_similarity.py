@@ -8,8 +8,8 @@ from torch.utils.data import DataLoader
 
 from utils.seed import set_seed
 from utils.dataset_splits import get_cifar10_subset, TwoViewDataset
-from rollNumber_05_task2_augmentations import TwoViewTransform, simclr_transform
-from rollNumber_05_task4_simclr import Encoder   # reuse the encoder definition
+from msds25055_05_task2_augmentations import TwoViewTransform, simclr_transform
+from msds25055_05_task4_simclr import Encoder   # reuse the encoder definition
 
 SEED       = 2026
 BATCH_SIZE = 64
